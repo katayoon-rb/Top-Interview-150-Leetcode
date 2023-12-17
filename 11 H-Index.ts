@@ -7,12 +7,5 @@
 */
 
 function hIndex(citations: number[]): number {
-    let output = 0
-
-    for (let i = 0; i < citations.length; i++) {
-        if (citations[i] >= 3) {
-            output++
-        }
-    }
-    return output
+    return citations.sort( (a, b) => b-a ).filter( (x, i) => x > i ).length 
 }

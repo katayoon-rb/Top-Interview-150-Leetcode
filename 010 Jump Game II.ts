@@ -11,9 +11,9 @@
 
 
 function jump(nums: number[]): number {
-    let jumps = 0;
-    let maxDis = 0;
-    let curPos = 0;
+    let jumps = 0
+    let maxDis = 0
+    let curPos = 0
 
     for (let i = 0; i < nums.length - 1; i++) {
         maxDis = Math.max( maxDis, i + nums[i] )
